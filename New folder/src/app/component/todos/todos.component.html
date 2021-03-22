@@ -1,0 +1,6 @@
+<p>todos works!</p>
+<ul>
+
+  <app-todo [todoshere]="todos" (toggleEvent)="toggletodo($event)" (deleteFunc)="OnDelete($event)"  ></app-todo>
+  <app-addtodo (addEvent)='AddTodo($event)' ></app-addtodo>
+</ul>

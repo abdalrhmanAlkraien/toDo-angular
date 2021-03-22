@@ -1,0 +1,18 @@
+{
+  "/api/*": {
+      "target": "http://localhost:8081",
+      "secure": false,
+      "logLevel": "debug"
+  },
+  "architect": {
+    "serve": {
+            "builder": "@angular-devkit/build-angular:dev-server",
+            "options": {
+                "browserTarget": "Book:build",
+                "proxyConfig": "src/proxy.conf.json"
+            }
+          }
+  }
+
+}
+

@@ -1,0 +1,9 @@
+
+<li *ngFor="let x of todoshere" [ngClass]='{"completed":x.completed}'>
+  <input type="checkbox" [checked]="x.completed" (change)="onChecked(x)">
+  <span>{{x.title}}  </span>
+  <span>{{x.id}}</span>
+  <input type="submit" value="Delete" (click)="onDelete(x)">
+</li>
+
+

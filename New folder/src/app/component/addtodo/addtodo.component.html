@@ -1,0 +1,10 @@
+<p>addtodo works!</p>
+<form (ngSubmit)="addTodo()">
+  <input  placeholder="Write your task"
+  [(ngModel)]="title"
+  name="title">
+  <input type="submit" value="Add Todo">
+</form>
+<p *ngIf="title.length>0">
+  The Task {{title}} Will Be Add
+</p>
